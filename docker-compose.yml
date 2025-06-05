@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    container_name: bybit_bot
+    env_file:
+      - .env
+    ports:
+      - "80:80"             # host:container
+    restart: unless-stopped
+    volumes:
+      - ./trades.db:/app/trades.db  # persist the SQLite ledger
