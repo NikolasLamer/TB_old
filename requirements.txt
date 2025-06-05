@@ -1,0 +1,7 @@
+Flask==3.0.2
+python-dotenv==1.0.1
+pybit==3.5.0            # official unified‑trading SDK
+pytelegrambotapi==4.15.5
+SQLAlchemy==2.0.29
+prometheus-flask-exporter==1.5.1
+Gunicorn==22.0.0
